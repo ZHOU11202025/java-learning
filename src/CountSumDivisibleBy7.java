@@ -1,3 +1,7 @@
+//编写一个“数字统计程序”：
+//        1. 用户输入一个正整数 n；
+//        2. 使用 for 循环或 while 循环输出从 1 到 n 中所有能被 7 整除的数，并统计这些
+//        数的个数与总和；
 import java.util.Scanner;
 public class CountSumDivisibleBy7 {
     public static void main(String[] args) {
