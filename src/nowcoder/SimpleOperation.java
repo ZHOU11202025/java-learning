@@ -1,5 +1,5 @@
 package nowcoder;
-
+//输入两个正整数，再输出它们的和，差，积，商，模。每个值之间用空格隔开
 import java.util.Scanner;
 
 public class SimpleOperation {
