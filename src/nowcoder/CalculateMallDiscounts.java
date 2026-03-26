@@ -11,7 +11,7 @@ public class CalculateMallDiscounts {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         int price = console.nextInt();
-        int cost = 0;
+        int cost;
 
         //write your code here......
         if(price >= 5000){
