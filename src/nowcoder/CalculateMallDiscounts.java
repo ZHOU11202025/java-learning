@@ -27,7 +27,7 @@ public class CalculateMallDiscounts {
             cost = (int)(price * 0.9);
         }
         else{
-            cost = (int)price;
+            cost = price;
         }
 
         System.out.println(cost);
