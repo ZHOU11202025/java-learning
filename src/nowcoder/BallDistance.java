@@ -9,7 +9,7 @@ public class BallDistance {
         int n =scanner.nextInt();//反弹次数
 
         //write your code here......
-        float sum = 0;//落地共经过距离
+        float sum;//落地共经过距离
         if(n == 1){
             sum = h;
             h /= 2;
