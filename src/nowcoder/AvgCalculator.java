@@ -9,7 +9,7 @@ public class AvgCalculator {
 
         //write your code here......
         int num;
-        double avg = 0;
+        double avg;
         int count = 0;
         double sum = 0;
         while(true){
@@ -23,7 +23,7 @@ public class AvgCalculator {
         avg = sum / count;
 
         //输出格式为：System.out.println(String.format("%.2f",avg));
-        System.out.println(String.format("%.2f",avg));
+        System.out.printf("%.2f%n",avg);
 
     }
 }
