@@ -1,3 +1,5 @@
+package school;
+//使用二维数组存放3x3的整数矩阵，分别输出该矩阵的主对角线元素和副对角线元素，并计算它们的和
 import java.util.Scanner;
 public class MatrixDiagonalSum {
     public static void main(String[] args) {
