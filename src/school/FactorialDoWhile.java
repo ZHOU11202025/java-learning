@@ -1,3 +1,5 @@
+package school;
+
 public class FactorialDoWhile {
     public static void main(String[] args){
         //使用do...while循环语句计算5的阶乘

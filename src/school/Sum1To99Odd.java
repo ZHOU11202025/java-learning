@@ -1,3 +1,5 @@
+package school;
+
 public class Sum1To99Odd {
     public static void main(String[] args){
         //计算1+3+5+9+...+99的值
