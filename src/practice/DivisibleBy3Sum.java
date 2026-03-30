@@ -1,3 +1,5 @@
+package practice;
+
 public class DivisibleBy3Sum {
     public static void main(String[] args){
         //计算1到100中所有能被3整除的数的和（用while循环）

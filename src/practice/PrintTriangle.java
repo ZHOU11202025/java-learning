@@ -1,3 +1,5 @@
+package practice;
+
 public class PrintTriangle {
     public static void main(String[] args){
         //打印一个直角三角形，第一行打印一个*，第二行打印两个*，...，共五行

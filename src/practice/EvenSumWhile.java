@@ -1,3 +1,5 @@
+package practice;
+
 public class EvenSumWhile {
     public static void main(String[] args){
         //用while循环计算1到100的偶数和

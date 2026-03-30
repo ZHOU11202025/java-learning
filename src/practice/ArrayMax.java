@@ -1,3 +1,5 @@
+package practice;
+
 public class ArrayMax {
     public static void main(String[] args){
         //找数组{78，92，85，64，99}的最大值

@@ -1,3 +1,5 @@
+package practice;
+
 public class MultiplicationTable {
     public static void main(String[] args){
         //用两层for循环,输出九九乘法表

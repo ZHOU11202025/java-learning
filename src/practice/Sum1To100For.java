@@ -1,3 +1,5 @@
+package practice;
+
 public class Sum1To100For {
     public static void main(String[] args) {
         //计算1到100的和（用for循环）

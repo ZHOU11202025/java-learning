@@ -1,3 +1,5 @@
+package practice;
+
 public class CountEvenInArray {
     public static void main(String[] args){
         //统计数组{1，2，3，4，5，6，7，8，9，10}中偶数的个数

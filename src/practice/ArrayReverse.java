@@ -1,3 +1,5 @@
+package practice;
+
 public class ArrayReverse {
     public static void main(String[] args){
         //将数组{1，2，3，4，5}反转成{5，4，3，2，1}并打印

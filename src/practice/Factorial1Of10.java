@@ -1,3 +1,5 @@
+package practice;
+
 public class Factorial1Of10 {
     public static void main(String[] args){
         //用do while循环计算10！

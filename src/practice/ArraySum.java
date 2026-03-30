@@ -1,3 +1,5 @@
+package practice;
+
 public class ArraySum {
     public static void main(String[] args){
         //计算数组{2，4，6，8，10}的和
