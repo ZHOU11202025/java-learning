@@ -18,7 +18,7 @@ public class LetterCounter {
         for(int i = 0;i < str.length();i++){
             char c = str.charAt(i);
             String s = "" + c;
-            if(s.equals(word) == true){
+            if(s.equals(word)){
                 count++;
             }
         }
