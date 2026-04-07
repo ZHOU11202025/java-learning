@@ -14,10 +14,7 @@ public class getLCM {
     public static int getCM(int m, int n){
 
         //write your code here......
-        int max = m;
-        if(m < n){
-            max = n;
-        }
+        int max = Math.max(m, n);
         while(true){
             if(max % m == 0 && max % n == 0){
                 return max;
