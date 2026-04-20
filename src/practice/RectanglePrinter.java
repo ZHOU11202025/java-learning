@@ -15,11 +15,11 @@ class Rectangle{
 public class RectanglePrinter {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.printf("请输入行数：");
+        System.out.println("请输入行数：");
         int h = sc.nextInt();
-        System.out.printf("请输入列数：");
+        System.out.println("请输入列数：");
         int l = sc.nextInt();
-        System.out.printf("请输入字符：");
+        System.out.println("请输入字符：");
         String c = sc.next();
         Rectangle r = new Rectangle();
         r.Printer(h ,l ,c);
