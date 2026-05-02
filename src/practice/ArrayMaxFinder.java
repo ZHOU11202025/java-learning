@@ -3,7 +3,7 @@ package practice;
 public class ArrayMaxFinder {
     public static void main(String[] args){
         A01 a =  new A01();
-        double[] arr = {2,4,5.6,1};
+        double[] arr = {1};
         Double res = a.max(arr);
         if(res != null){
             System.out.println("arr数组的最大值是：" + a.max(arr));
