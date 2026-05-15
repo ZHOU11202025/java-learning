@@ -1,8 +1,8 @@
 package nowcoder;
 
 import java.util.Scanner;
-//现有一个Data类，内部定义了属性x和y，在main方法中实例化了Data类，并计算了data对象中x和y的和。
-// 但是，Data类的定义存在错误，请你将这些错误修正过来，使得main方法中的求和逻辑可以正常执行
+
+//现有一个Data类，内部定义了属性x和y，在main方法中实例化了Data类，并计算了data对象中x和y的和。但是，Data类的定义存在错误，请你将这些错误修正过来，使得main方法中的求和逻辑可以正常执行
 public class DataTest {
 
     public static void main(String[] args) {
@@ -18,10 +18,12 @@ public class DataTest {
 }
 
 class Data {
-    int x;
-    int y;
+    private int x;
+    private int y;
 
-    public Data(){}
+    public Data() {
+    }
+
     public Data(int x, int y) {
         this.x = x;
         this.y = y;
