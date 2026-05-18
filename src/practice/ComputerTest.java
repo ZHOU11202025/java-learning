@@ -13,15 +13,13 @@ public class ComputerTest {
         pc.CPU = "Intel";
         pc.memory = "16GB";
         pc.hardDisk = "512GB";
-        System.out.println("品牌：" + pc.brand);
-        pc.getDetails();
+        System.out.println("品牌：" + pc.brand + " " + pc.getDetails());
 
         np.color = "black";
         np.CPU = "AMD";
         np.memory = "8GB";
         np.hardDisk = "256GB";
-        System.out.println("颜色：" + np.color);
-        np.getDetails();
+        System.out.println("颜色：" + np.color + " " + np.getDetails());
     }
 }
 class Computer{
@@ -34,8 +32,8 @@ class Computer{
         this.memory = memory;
         this.hardDisk = hardDisk;
     }
-    public void getDetails(){
-        System.out.println("CPU:" + CPU + " 内存:" + memory + " 硬盘:" + hardDisk);
+    public String getDetails(){
+        return "CPU:" + CPU + " 内存:" + memory + " 硬盘:" + hardDisk;
     }
 }
 class PC extends Computer{
