@@ -37,7 +37,7 @@ class Student extends Person3{
         this.score = score;
     }
     public String say(){
-        return "姓名：" + super.getName() + " 年龄：" + super.getAge() + " 学号：" + this.id +
+        return super.say() + " 学号：" + this.id +
                 " 分数:" + this.score;
 
     }
