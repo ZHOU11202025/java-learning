@@ -52,7 +52,7 @@ class Staff extends Employee{
         System.out.println("正在工作");
     }
     public double getAnnual(){
-        return 12 * super.getSalary();
+        return super.getAnnual();
     }
 }
 class Manager extends Employee{
@@ -65,7 +65,7 @@ class Manager extends Employee{
         return bonus;
     }
     public double getAnnual(){
-        return 12 * super.getSalary() + this.bonus;
+        return super.getAnnual() + this.bonus;
     }
     public void manage(){
         System.out.println("正在管理");
