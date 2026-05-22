@@ -4,8 +4,8 @@ package practice;
 public class PersonEqualityChecker {
     public static void main(String[] args) {
         Person4 p1 = new Person4("jack",18,'m');
-        Person4 p2 = new Person4("mike",22,'m');
-        System.out.println(p1.equalityCheck(p1,p2));
+        Person4 p2 = new Person4("jack",18,'m');
+        System.out.println(p1.equals(p2));
     }
 }
 class Person4{
@@ -27,7 +27,18 @@ class Person4{
     public char getGender() {
         return gender;
     }
-    public boolean equalityCheck(Person4 p1,Person4 p2){
-        return p1.getName().equals(p2.getName()) && p1.getAge() == p2.getAge() && p1.getGender() == p2.getGender();
+    //重写Object中的equals方法
+    public boolean equals(Object obj){
+        //如果比较的两个对象是同一个对象
+        if(this == obj){//this指当前调用equals方法的那个Person对象，即p1，obj则是传入的p2
+            return true;
+        }
+        //类型判断
+        if(obj instanceof Person4){
+            Person4 p = (Person4) obj;//向下转型
+            return this.getName().equals(p.getName()) && this.getAge() == p.getAge()
+                    && this.getGender() == p.getGender();
+        }
+        return false;
     }
 }
