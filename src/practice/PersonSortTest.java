@@ -9,6 +9,9 @@ public class PersonSortTest {
         persons[1] = new Person5("mike", 26, "工程师");
         persons[2] = new Person5("lily", 30, "设计师");
         new Person5().ageSort(persons);
+        for (int i = 0; i < persons.length; i++) {
+            System.out.println(persons[i]);
+        }
     }
 }
 
@@ -49,9 +52,9 @@ class Person5 {
                 }
             }
         }
-        for (int i = 0; i < people.length; i++) {
-            System.out.println(people[i].getName() + " " +
-                    people[i].getAge() + " " + people[i].getJob());
-        }
+    }
+
+    public String toString() {
+        return "name: " + name + ", age: " + age + ", job: " + job;
     }
 }
