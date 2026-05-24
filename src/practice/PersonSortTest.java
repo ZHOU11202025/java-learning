@@ -43,7 +43,7 @@ class Person5 {
 
     public void ageSort(Person5[] people) {
         Person5 temp = new Person5();
-        for (int i = 0; i < people.length; i++) {
+        for (int i = 0; i < people.length - 1; i++) {
             for (int j = 1; j < people.length - i; j++) {
                 if (people[j].getAge() > people[j - 1].getAge()) {
                     temp = people[j];
