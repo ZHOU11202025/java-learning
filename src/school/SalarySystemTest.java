@@ -124,11 +124,6 @@ class BasePlusSalesEmployee extends SalesEmployee{
         return baseSalary;
     }
     public double getSalary(int month){
-        if(month == getBirthMonth()){
-            return super.getMonthSales() * super.getCommissionRate() + baseSalary + 100;
-        }
-        else{
-            return super.getMonthSales() * super.getCommissionRate() + baseSalary ;
-        }
+        return super.getSalary(month) + baseSalary;
     }
 }
