@@ -14,8 +14,8 @@ import java.util.Comparator;
 public class EmployeeSortTest {
     public static void main(String[] args) {
         ArrayList<Employee3> list = new ArrayList<>();
-        list.add(new Employee3("jake",20000,new MyDate(10,20,2003)));
-        list.add(new Employee3("jake",18000,new MyDate(6,2,2002)));
+        list.add(new Employee3("jake",20000,new MyDate(10,20,2002)));
+        list.add(new Employee3("jake",18000,new MyDate(6,2,2003)));
         list.add(new Employee3("amy",15000,new MyDate(12,14,2001)));
         list.sort(new Comparator<>() {
             @Override
@@ -24,17 +24,7 @@ public class EmployeeSortTest {
                 if (nameCompare != 0) {
                     return nameCompare;
                 }
-                MyDate d1 = o1.getMyDate();
-                MyDate d2 = o2.getMyDate();
-                int yearCompare = Integer.compare(d1.getYear(),d2.getYear());
-                if (yearCompare != 0) {
-                    return yearCompare;
-                }
-                int monthCompare = Integer.compare(d1.getMonth(),d2.getMonth());
-                if (monthCompare != 0) {
-                    return monthCompare;
-                }
-                return Integer.compare(d1.getDay(),d2.getDay());
+                return o1.getMyDate().compareTo(o2.getMyDate());
             }
         });
         for (Employee3 employee3 : list) {
@@ -84,7 +74,7 @@ class Employee3 {
     }
 }
 
-class MyDate {
+class MyDate implements Comparable<MyDate>{
     private int month;
     private int day;
     private int year;
@@ -121,5 +111,17 @@ class MyDate {
     @Override
     public String toString() {
         return "[month:" + this.month + ", day:" + this.day + ", year:" + this.year + "]";
+    }
+    @Override
+    public int compareTo(MyDate o) {
+        int yearCompare = Integer.compare(year,o.getYear());
+        if (yearCompare != 0) {
+            return yearCompare;
+        }
+        int monthCompare = Integer.compare(month,o.getMonth());
+        if (monthCompare != 0) {
+            return monthCompare;
+        }
+        return Integer.compare(day,o.getDay());
     }
 }
