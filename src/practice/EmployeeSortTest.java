@@ -52,7 +52,7 @@ public class EmployeeSortTest {
 class Employee3 {
     private String name;
     private double sal;
-    MyDate myDate;
+    private MyDate myDate;
 
     public Employee3(String name, double sal, MyDate myDate) {
         this.name = name;
