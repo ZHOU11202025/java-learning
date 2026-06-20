@@ -24,23 +24,17 @@ public class EmployeeSortTest {
                 if (nameCompare != 0) {
                     return nameCompare;
                 }
-                else {
-                    MyDate d1 = o1.getMyDate();
-                    MyDate d2 = o2.getMyDate();
-                    int yearCompare = Integer.compare(d1.getYear(),d2.getYear());
-                    if (yearCompare != 0) {
-                        return yearCompare;
-                    }
-                    else {
-                        int monthCompare = Integer.compare(d1.getMonth(),d2.getMonth());
-                        if (monthCompare != 0) {
-                            return monthCompare;
-                        }
-                        else {
-                            return Integer.compare(d1.getDay(),d2.getDay());
-                        }
-                    }
+                MyDate d1 = o1.getMyDate();
+                MyDate d2 = o2.getMyDate();
+                int yearCompare = Integer.compare(d1.getYear(),d2.getYear());
+                if (yearCompare != 0) {
+                    return yearCompare;
                 }
+                int monthCompare = Integer.compare(d1.getMonth(),d2.getMonth());
+                if (monthCompare != 0) {
+                    return monthCompare;
+                }
+                return Integer.compare(d1.getDay(),d2.getDay());
             }
         });
         for (Employee3 employee3 : list) {
